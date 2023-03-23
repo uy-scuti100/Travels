@@ -15,10 +15,10 @@ const Home = () => {
     setCurrentSlide(currentSlide === 0 ? 1 : currentSlide - 1);
   };
   return (
-    <div className="max-w-[1440px]">
+    <div className="max-w-[1440px] overflow-x-hidden">
       <div className="w-screen h-screen relative">
         <div
-          className="flex w-[200vw] h-full transition-all duration-500 ease"
+          className="flex w-[200vw] h-full transition-all duration-500 ease overflow-x-hidden"
           style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
         >
           <img
